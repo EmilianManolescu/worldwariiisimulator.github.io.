@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World War III</title>
+    <script src="wwiii.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="img/fav.jpg">
+    <link rel="stylesheet" href="wwiii.css">
+</head>
+<body>
+
+    <embed src="TheHarm.mp3" loop="true" autostart="true" width="2" height="0">
+    
+    <header>
+        <a href="#"><img src="img/logo.png" width="200"></a>
+    </header>
+    
+    <div class="intro">
+        <p>World War III has begun and you have to choose your side. Or you can make peace. ☺</p>
+    </div>
+
+    <section>
+        <div class="country1">
+            <!--aici vine country name din js-->
+            <h3 id="country1name">Russia</h3>
+            <div class="flag1"><img src="img/russia.jpg" width="150"></div>
+            <h5>Army</h5>
+            <p>Soldiers: <span id="country1soldiers"></span></p>
+            <button onclick="buyArmySoldiers1()">Buy Soldiers</button>
+            <p>Planes: <span id="country1planes"></span></p>
+            <button onclick="buyArmyPlanes1()">Buy Planes</button>
+            <p>Tanks: <span id="country1tanks"></span></p>
+            <button onclick="buyArmyTanks1()">Buy Tanks</button>
+        </div>
+
+        <div class="country2">
+            <!--aici vine country name din js-->
+            <h3 id="country2name">USA</h3>
+            <div class="flag2"><img src="img/usa.jpg" width="150"></div>
+            <h5>Army</h5>
+            <p>Soldiers: <span id="country2soldiers"></span></p>
+            <button onclick="buyArmySoldiers2()">Buy Soldiers</button>
+            <p>Planes: <span id="country2planes"></span></p>
+            <button onclick="buyArmyPlanes2()">Buy Planes</button>
+            <p>Tanks: <span id="country2tanks"></span></p>
+            <button onclick="buyArmyTanks2()">Buy Tanks</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="letsfight">
+        <button onclick="fight()">Let's fight</button>
+        <h1 id="display-fight"></h1>
+    </div>
+    </section>
+</body>
+</html>
